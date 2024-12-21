@@ -23,7 +23,7 @@ interface props {
 const BlogContent: React.FC<props> = ({ data }) => {
     return (
         <section className='py-[5rem]'>
-            <h3 className='px-4 md:px-0 text-3xl max-w-[1200px] w-full mx-auto my-6'>
+            <h3 className='px-4  text-3xl max-w-[1200px] w-full mx-auto my-6'>
      
                 <Marquee>
                 <div className='w-full flex gap-3'>
@@ -32,7 +32,7 @@ const BlogContent: React.FC<props> = ({ data }) => {
                 </Marquee>
                 
             </h3>
-            <div className='grid max-w-[1200px] w-full mx-auto grid-cols-1 gap-6 p-4 md:p-0'>
+            <div className='grid max-w-[1200px] w-full mx-auto grid-cols-1 gap-6 p-4 '>
                 {data.map((d, i) => {
                     return (
                         <a key = {i} href={`https://techbyakash.hashnode.dev/${d.node.slug}`} target="_blank">

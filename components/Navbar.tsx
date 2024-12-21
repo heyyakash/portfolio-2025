@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 const Navbar = () => {
   const pathname = usePathname();
-  console.log(pathname);
   return (
     // <div className="w-full h-[70px] flex bg justify-center items-center">
       <nav className="flex text-lg left-[50%] -translate-x-[50%] z-[1000] top-3 border-[1.5px] bg-black border-white/20 overflow-hidden fixed rounded-3xl p-[0.5px] justify-center items-center">

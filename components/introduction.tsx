@@ -4,12 +4,12 @@ import CustomCard from './customizableCard'
 const Introduction = () => {
     return (
         <section className='py-[5rem] relative'>
-            <div className='max-w-[1200px] w-full mx-auto md:my-5 text-3xl px-4 md:px-0 font-semibold'>Intro</div>
-            <div className='grid grid-cols-1 grid-rows-2 md:grid-cols-3 md:grid-rows-1 max-w-[1200px] w-full px-5 md:px-0 md:gap-6 items-center place-items-center mx-auto'>
+            <div className='max-w-[1200px] w-full mx-auto md:my-5 text-3xl px-4  font-semibold m'>Intro</div>
+            <div className='grid grid-cols-1 grid-rows-2 md:grid-cols-3 md:grid-rows-1 max-w-[1200px] w-full px-4  md:gap-6 items-center place-items-center mx-auto'>
                 <CustomCard className='col-span-1 w-full h-[330px]'>
                     <img src="/profile.jpeg" className='w-full h-full  object-cover  grayscale hover:grayscale-0 trans cursor-pointer' alt="avatar" />
                 </CustomCard>
-                <div className='col-span-2 flex flex-col gap-6'>
+                <div className='col-span-2 flex flex-col gap-4'>
                     <CustomCard className='w-full p-6'>
                     Tech Enthusiast & Web Developer | Winner of Multiple Hackathons | Ex SDE Intern @CloudSEK, @CFT Labs and @Hackdev Technologies
                     </CustomCard>

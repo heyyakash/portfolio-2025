@@ -15,8 +15,8 @@ interface org {
 const Orgs = () => {
     return (
         <section className=' relative'>
-            <div className='max-w-[1200px] w-full mx-auto md:my-5 text-3xl px-4 md:px-0 my-6 font-semibold'>Orgs</div>
-            <div className='grid grid-cols-1 max-w-[1200px] w-full px-5 md:px-0 gap-8 items-center place-items-center mx-auto'>
+            <div className='max-w-[1200px] w-full mx-auto md:my-5 text-3xl px-4  my-6 font-semibold'>Orgs</div>
+            <div className='grid grid-cols-1 max-w-[1200px] w-full px-4  gap-8 items-center place-items-center mx-auto '>
                 {data.map((x, i) => {
                     return (
                         <CustomCard key={i} className='grid grid-cols-1 md:grid-cols-3 w-full min-h-[300px]'>
@@ -29,7 +29,7 @@ const Orgs = () => {
                                 <div className='w-full h-full flex flex-col items-center justify-center'><h3 className='text-3xl text-center font-medium'>
                                     {x.name}
 
-                                    <div className='flex gap-3  justify-center items-center'>
+                                    <div className='flex gap-3  justify-center items-center  flex-wrap'>
                                         <CustomCard className='border-dashed p-2 text-sm'>{x.start}</CustomCard>
                                         {"->"}
                                         <CustomCard className='border-dashed p-2 text-sm'>{x.end}</CustomCard>
