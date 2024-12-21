@@ -87,7 +87,7 @@ const Skills = () => {
         <section className='pb-[5rem] md:pb-[10rem]'>
             <div className='max-w-[1200px] mx-auto w-full'>
                 <h3 className='text-3xl my-3 mb-6 font-semibold px-4 md:px-0'>Skills</h3>
-                <div className='flex flex-col md:flex-row gap-6 px-4 md:px-auto items-starts'>
+                <div className='flex flex-col md:flex-row gap-6 px-4 md:px-auto items-start'>
                     <div className='flex w-full md:w-[50%] flex-col gap-6'>
                         <CustomCard className='w-full h-[300px] text-[12rem] flex items-center justify-center'>
                             {currentSkill.icons}
