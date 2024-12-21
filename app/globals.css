@@ -38,4 +38,8 @@ body {
     .trans {
         @apply transition-all duration-150;
     }
+
+    .light-border{
+        @apply border-white/20;
+    }
 }
