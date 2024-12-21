@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import CustomCard from "@/components/customizableCard";
+import { FaHeart } from "react-icons/fa6";
+import DashedLine from "@/components/DashedLine";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +26,12 @@ export default function RootLayout({
         <main className="relative z-0">
         {children}
         </main>
+        <footer className="mt-[5rem]">
+          <div className="w-full py-4  flex text-xl relative text-gray-400 gap-2 font-normal justify-center items-center">
+            <DashedLine position="top-0" />
+            Crafted with <FaHeart className="text-pink-500" /> by <span className="text-white font-semibold">Akash Sharma</span>
+          </div>
+        </footer>
       </body>
     </html>
   );
