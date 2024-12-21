@@ -16,7 +16,7 @@ const Art = () => {
                 <CustomCard key = {index} className='flex w-full flex-col'>
                     <div className='bg-white p-2 w-full text-black text-xl'>
                         <Marquee speed={100} >
-                        {Array(5).fill(image.name).map(x => <p className='mx-2'>{x}</p>)}
+                        {Array(5).fill(image.name).map((x,i) => <p className='mx-2' key = {i}>{x}</p>)}
                         </Marquee>
                     </div>
                     <a href={image.url} className='cursor-crosshair w-full' target='_blank'><img className='object-cover w-full' src = {image.url} /></a>
