@@ -1,3 +1,6 @@
+"use client"
+import { motion } from "framer-motion";
+
 interface props {
   position: string;
 }
@@ -5,7 +8,10 @@ interface props {
 const DashedLine: React.FC<props> = ({ position }) => {
   return (
     <div className={`absolute w-full h-[1px]  ${position}`}>
-      <div
+      <motion.div
+        initial={{ width: 0 }} 
+        animate={{ width:"100%" }} 
+        transition={{ duration: 1, ease: "easeOut" }} 
         className="w-full h-full bg-gradient-to-r from-transparent via-white to-transparent"
         style={{
           maskImage: "linear-gradient(to right, black 5px, transparent 5px)",
@@ -16,7 +22,7 @@ const DashedLine: React.FC<props> = ({ position }) => {
           maskRepeat: "repeat",
           WebkitMaskRepeat: "repeat",
         }}
-      ></div>
+      ></motion.div>
     </div>
   );
 };
