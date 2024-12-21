@@ -18,9 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={GeistSans.className}>
+      <body className={GeistSans.className + " relative"}>
         <Navbar />
+        <main className="relative z-0">
         {children}
+        </main>
       </body>
     </html>
   );
