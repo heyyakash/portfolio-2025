@@ -1,7 +1,7 @@
 import React from 'react'
 import CustomCard from './customizableCard'
 
-const Projects = () => {
+const Introduction = () => {
     return (
         <section className='py-[10rem]'>
             <div className='max-w-[1200px] w-full mx-auto my-5 text-3xl font-semibold'>Intro</div>
@@ -32,4 +32,4 @@ const Projects = () => {
     )
 }
 
-export default Projects
+export default Introduction
