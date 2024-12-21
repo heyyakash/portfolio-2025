@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="min-h-[600px] lg:min-h-[700px] flex flex-col justify-center">
+    <section className="bg-[url('/graphy.png')] min-h-[660px] lg:min-h-[723px] flex flex-col justify-center">
       <div className="max-w-[750px] w-full mx-auto">
-        <h3 className="text-xl -mt-12 px-4 lg:px-0 lg:text-3xl font-medium">
+        <motion.h3 initial={{ width: 0 }} animate={{ width: "auto" }} transition={{ duration: 3, ease: "easeInOut" }} className="text-xl overflow-hidden -mt-12 px-4 lg:px-0 lg:text-3xl font-medium whitespace-nowrap">
           Hi! I&apos;m
-        </h3>
+        </motion.h3>
       </div>
 
       {/* <motion.div
