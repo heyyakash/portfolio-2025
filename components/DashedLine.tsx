@@ -12,7 +12,7 @@ const DashedLine: React.FC<props> = ({ position }) => {
         initial={{ width: 0 }} 
         animate={{ width:"100%" }} 
         transition={{ duration: 1, ease: "easeOut" }} 
-        className="w-full h-full bg-gradient-to-r from-transparent via-white to-transparent"
+        className="w-full h-full bg-white md:bg-gradient-to-r md:from-transparent md:via-white md:to-transparent"
         style={{
           maskImage: "linear-gradient(to right, black 5px, transparent 5px)",
           WebkitMaskImage:

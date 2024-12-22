@@ -26,9 +26,8 @@ export default function RootLayout({
         <main className="relative z-0">
         {children}
         </main>
-        <footer className="mt-[5rem]">
+        <footer className="mt-[5rem] px-4">
           <CustomCard className="w-full py-4 max-w-[1200px] mx-auto flex text-md relative text-gray-400 gap-2 font-normal justify-center items-center">
-            
             Crafted with <FaHeart className="text-pink-500" /> by <span className="text-white font-semibold">Akash Sharma</span>
           </CustomCard>
         </footer>
