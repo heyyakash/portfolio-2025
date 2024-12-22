@@ -7,6 +7,7 @@ interface props {
 }
 
 const ImageColumn: React.FC<props> = ({ data }) => {
+    console.log(data)
     return (
         <div className='grid grid-cols-1 w-full gap-4'>
             {data.map((image, index) => {
