@@ -13,16 +13,27 @@ export default function HobbiesHero() {
         </motion.h3>
       </div>
       <motion.div
-  className="m-0 p-0 -mt-4 lg:mt-0 relative font-bold"
+        className="m-0 p-0 -mt-4 lg:mt-0 relative font-bold"
 
->
+      >
         <motion.h1
-            initial = {{opacity:0}}
-            animate = {{opacity:1}}
-            transition={{duration:1, ease:easeOut}}
-        className="text-center  text-[7rem] md:text-[10rem] lg:text-[15rem]  bg-clip-text  leading-[.72]">
-            Hobby
+          className="text-center text-[7rem] md:text-[10rem] lg:text-[15rem] bg-clip-text leading-[.72] origin-center"
+          initial={{
+            opacity:0
+          }}
+          animate={{
+            opacity:1,
+            
+          }}
+          transition={{
+            duration: 3,
+            ease: "easeOut",
+          }}
+
+        >
+          Hobby
         </motion.h1>
+
         <DashedLine position="top-0" />
         <DashedLine position="top-[1.2rem] lg:top-11" />
         <DashedLine position="bottom-[1.2rem] lg:bottom-11" />

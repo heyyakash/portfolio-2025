@@ -10,7 +10,7 @@ const Introduction = () => {
                     <img src="/profile.jpeg" className='w-full h-full  object-cover  grayscale hover:grayscale-0 trans cursor-pointer' alt="avatar" />
                 </CustomCard>
                 <div className='col-span-2 grid grid-cols-1 mt-8 md:mt-0 grid-rows-3 gap-4 h-full'>
-                    <CustomCard className='w-full p-6'>
+                    <CustomCard className='w-full flex items-center justify-center p-6'>
                     Tech Enthusiast & Web Developer | Winner of Multiple Hackathons | Ex SDE Intern @CloudSEK, @CFT Labs and @Hackdev Technologies
                     </CustomCard>
                     <CustomCard className='w-full p-6 row-span-2 flex flex-col justify-center items-start'>

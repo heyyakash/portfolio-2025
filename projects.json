@@ -36,7 +36,7 @@
         "github":"https://github.com/heyyakash/hammer"
     },
     {
-        "name":"Hammer",
+        "name":"Orbis",
         "description":"Orbis is a robust and lightweight cron scheduler, crafted in the Go programming language",
         "stack":["Golang"],
         "github":"https://github.com/heyyakash/orbis"

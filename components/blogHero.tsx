@@ -18,9 +18,9 @@ export default function BlogHero() {
 >
         <motion.h1
             initial = {{opacity:0}}
-            animate = {{opacity:1}}
-            transition={{duration:1, ease:easeOut}}
-        className="text-center  text-[7rem] md:text-[10rem] lg:text-[15rem]  bg-clip-text  leading-[.72]">
+            animate = {{ opacity:1}}
+            transition={{duration:3, ease:easeOut}}
+        className="text-center whitespace-nowrap text-[7rem] md:text-[10rem] lg:text-[15rem]  bg-clip-text  leading-[.72]">
          Blogs
         </motion.h1>
         <DashedLine position="top-0" />
