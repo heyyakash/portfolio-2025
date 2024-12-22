@@ -39,7 +39,7 @@ const Orgs = () => {
                             <div className='col-span-2 flex relative items-center p-4 '>
                                 <div className='absolute bg-white text-black top-0 left-0 p-2 font-medium'>{x.position}</div>
                                 <ul className='py-12 md:py-0'>
-                                    {x.work.map((w, j) => <li key={i}>{"-> "}{w}</li>)}
+                                    {x.work.map((w, j) => <li key={j}>{"-> "}{w}</li>)}
                                 </ul>
                             </div>
                         </CustomCard>
