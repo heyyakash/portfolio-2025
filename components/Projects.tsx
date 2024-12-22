@@ -5,6 +5,7 @@ import data from '@/projects.json'
 import CustomCard from './customizableCard'
 import { h3 } from 'framer-motion/client'
 import Marquee from "react-fast-marquee";
+import { FaExternalLinkAlt } from 'react-icons/fa'
 interface project {
     name: string
     thumbnail?: string
@@ -40,10 +41,10 @@ const Projects = () => {
                         <CustomCard className='w-full h-[300px] text-[12rem] flex items-center justify-center'>
                             {currentProject.thumbnail ? (<img src = {currentProject.thumbnail} alt = "preview" /> ): (<p className='text-xl'>NO PREVIEW</p>)}
                         </CustomCard>
-                
+                        <CustomCard hover className='p-4 w-full text-center'>{currentProject.description}</CustomCard>
                         <div className="flex gap-6">
-                            {currentProject.link ? (<CustomCard hover className='p-4 w-full text-center cursor-pointer'><a href = {currentProject.link} target='_blank'>LINK</a></CustomCard>):(<></>)}
-                            <CustomCard hover className='p-4 w-full text-center cursor-pointer'><a href = {currentProject.github} target='_blank'>GITHUB</a></CustomCard>
+                            {currentProject.link ? (<CustomCard hover className='p-4 w-full cursor-pointer'><a href = {currentProject.link} className='flex items-center gap-2 justify-center' target='_blank'>LINK <FaExternalLinkAlt /></a></CustomCard>):(<></>)}
+                            <CustomCard hover className='p-4 w-full cursor-pointer'><a href = {currentProject.github} className='flex items-center gap-2 justify-center' target='_blank'>GITHUB <FaExternalLinkAlt /></a></CustomCard>
                         </div>
                         <div className='flex gap-4 flex-wrap'>
                         {currentProject.stack.map((s,i)=><div className='p-2 border-[1.5px] bg-white text-black rounded-lg' key = {i}>{s}</div>)}

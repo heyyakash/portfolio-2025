@@ -6,14 +6,14 @@ const Introduction = () => {
         <section className='py-[5rem] relative'>
             <div className='max-w-[1200px] w-full mx-auto md:my-5 text-3xl px-4  font-semibold m'>Intro</div>
             <div className='grid grid-cols-1 grid-rows-2 md:grid-cols-3 md:grid-rows-1 max-w-[1200px] w-full px-4  md:gap-6 items-center place-items-center mx-auto'>
-                <CustomCard className='col-span-1 w-full h-[330px]'>
+                <CustomCard className='col-span-1 w-full h-full'>
                     <img src="/profile.jpeg" className='w-full h-full  object-cover  grayscale hover:grayscale-0 trans cursor-pointer' alt="avatar" />
                 </CustomCard>
-                <div className='col-span-2 flex flex-col gap-4'>
+                <div className='col-span-2 grid grid-cols-1 grid-rows-3 gap-4 h-full'>
                     <CustomCard className='w-full p-6'>
                     Tech Enthusiast & Web Developer | Winner of Multiple Hackathons | Ex SDE Intern @CloudSEK, @CFT Labs and @Hackdev Technologies
                     </CustomCard>
-                    <CustomCard className='w-full p-6'>
+                    <CustomCard className='w-full p-6 row-span-2 flex flex-col justify-center items-start'>
                         <div>
                             <p>Send an email {"->"} <a target='_blank' href="mailto:akashsharma2002@gmail.com" className='dark:text-white text-black font-semibold'>akashsharma2002@gmail.com</a></p>
                             <p>DM on X {"->"} <a target='_blank' href="https://x.com/heyyakash" className='dark:text-white text-black font-semibold'>@heyyakash</a></p>

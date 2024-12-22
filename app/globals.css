@@ -66,4 +66,5 @@ body {
     .light-border {
         @apply border-white/20;
     }
+
 }

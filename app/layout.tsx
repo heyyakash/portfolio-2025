@@ -27,10 +27,10 @@ export default function RootLayout({
         {children}
         </main>
         <footer className="mt-[5rem]">
-          <div className="w-full py-4 max-w-[1200px] mx-auto flex text-xl relative text-gray-400 gap-2 font-normal justify-center items-center">
-            <DashedLine position="top-0" />
+          <CustomCard className="w-full py-4 max-w-[1200px] mx-auto flex text-md relative text-gray-400 gap-2 font-normal justify-center items-center">
+            
             Crafted with <FaHeart className="text-pink-500" /> by <span className="text-white font-semibold">Akash Sharma</span>
-          </div>
+          </CustomCard>
         </footer>
       </body>
     </html>

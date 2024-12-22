@@ -29,7 +29,7 @@ const Orgs = () => {
                                 <div className='w-full h-full flex flex-col items-center justify-center'><h3 className='text-3xl text-center font-medium'>
                                     {x.name}
 
-                                    <div className='flex gap-3  justify-center items-center  flex-wrap'>
+                                    <div className='flex gap-3 mt-3 justify-center items-center  flex-wrap'>
                                         <CustomCard className='border-dashed p-2 text-sm'>{x.start}</CustomCard>
                                         {"->"}
                                         <CustomCard className='border-dashed p-2 text-sm'>{x.end}</CustomCard>
